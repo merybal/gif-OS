@@ -1,0 +1,135 @@
+//General
+$font: 'Chakra Petch', ;
+$font-size-big: 16px;
+$font-size-small: 14px;
+$max-width: 1200px; //breakpoint tablet
+$sides: 10px;
+
+//Breakpoint mobile
+$phone-landscape-min: 501px;
+
+//Colores
+$font-color-boton-light: #110038;
+$background-color-light: #FFF4FD;
+$background-color-gris-light: #E6E6E6;
+
+$font-color-boton-dark: #FFFFFF;
+$background-color-dark: #110038;
+$background-color-gris-dark: #B4B4B4;
+
+//.h3
+$height-h3: 32px;
+$background-color-h3-light: #FFFAFE;
+$box-shadow-h3-light: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+$border-h3-light: 1px solid #E6BBE2;
+$box-shadow-h3-dark: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+$border-h3-dark: 1px solid #2E32FB;
+
+
+//BARRA azul
+    $font-color-ba: #ffffff;
+    $height-ba: 24px;
+    $height-ba-mobile: 34px;
+    $background-image-ba-light: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    $background-image-ba-dark: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    
+    //Busqueda
+    $font-weight-ba-busqueda: 700; //Bold
+
+
+//BARRA DE BUSQUEDA
+$box-shadow-contenedorBusqueda-light: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+$box-shadow-contenedorBusqueda-dark: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+
+//RECUADRO GIFS
+$height-recuadroGifB: 298px;
+$width-recuadroGifB: 288px;
+$height-recuadroGifB-hover: 266px;
+$width-recuadroGifB-hover: 280px;
+$width-rececuadroGifB-ancho: 592px;
+$width-recuadroGifB-ancho-hover: 584px;
+
+$height-recuadroGifs: 313px;
+$height-gifs: 280px;
+$width-recuadro-gifs: 288px;
+$height-recuadrogifs: 298px; 
+$box-shadow-recuadroGifs-light: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+$box-shadow-recuadroGifs-dark: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+
+//RECUADRO GRABAR - VISOR
+$border-visor-light: 1px solid #979797;
+$border-visor-dark: 1px solid #110038;
+$box-shadow-visor-light:  inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+$box-shadow-visor-dark: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #000000;
+
+//HOVER
+$outline-hover-light: 1px dotted #110038;
+$outline-offset-light: -4px;
+$outline-hover-dark: 1px dotted #FFFFFF;
+
+//BOTONES
+$height-botones: 36px;
+
+    //botonA //rosa (crear guifos, elegir tema)
+    $background-color-botonA-light: #F7C9F3;
+    $background-color-botonA-hover-light: #E6BBE2;
+    $border-botonA-light: 1px solid #110038;
+    $box-shadow-botonA-light: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+
+    $background-color-botonA-dark: #EE3EFE;
+    $background-color-botonA-hover-dark: #CE36DB;
+    $border-botonA-dark: 1px solid #110038;
+    $box-shadow-botonA-dark: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+
+    //botonB //sin fondo (mis guifos)
+    $background-color-botonB: transparent;
+    $width-botonB: 95px;
+
+    //botonC //light y dark
+    $background-color-botonC-picked-light: #FFF4FD;
+    $box-shadow-botonC-picked-light: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+    $border-botonC-picked-light: 1px solid #CCA6C9;
+    $background-color-botonC-light: #f0f0f0;
+    $border-botonC-light: 1px solid #808080;
+    $box-shadow-botonC-light: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+
+    $background-color-botonC-picked-dark: #2E32FB;
+    $border-botonC-picked-dark: 1px solid rgba(51,53,143,0.20);
+    $box-shadow-botonC-picked-dark: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+    $background-color-botonC-dark: #CCCCCC;
+    
+
+    //botonD //boton busqueda
+    $border-botonD-light: 1px solid #808080;
+    $box-shadow-botonD-light: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    $font-color-botonD-dark: #8F8F8F;
+
+    //botonE //ver mas
+    $height-botonE: 34px;
+    $width-botonE: 81px;
+    $background-color-botonE-light: #4180F6;
+    $background-color-botonE-hover-light: #3A72DB;
+    $background-color-botonE-hover-dark: #2629CC;
+    $color-botonE: #FFFFFF;
+    $box-shadow-botonE-light: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+    $border-botonE-light: 1px solid #4C2F99;
+    $box-shadow-botonE-dark: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+
+    
+    //botonF //desplegable busqueda
+    $height-botonF: 36px;
+    $max-width-botonF: 1057px;
+    $background-color-botonF-dark: #CCCCCC;
+    $box-shadow-botonF-dark: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+
+    //botonH
+    $background-color-botonH-hover-light: #F0E5EE;
+    $box-shadow-boronH-dark: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+
+    //botonI
+    $background-color-botonI-light: #FF6161;
+    $box-shadow-botonI-light: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;;
+
+
+
+

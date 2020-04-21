@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Guifos</title>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="barraAzul superior">
+            <h1>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Numero de visitas </h1>
+            <!-- completar numero de visitas -->
+        </div>
+        <div class="subHeader paginaMisGuifos">
+            <div class="logo">
+                <img src="./images/gifOF_logo.png" alt="Logo" id="logo">
+            </div>
+
+            <nav class="botonera">
+    <!-- Boton CREAR GUIOFOS -->
+                <button class="botonA crearGuifos">Crear Guifos</button>
+    <!-- Boton ELEGIR TEMA -->
+                <div>
+                    <div class="botonDesplegable" id="botonDesplegable">
+                        <button class="botonA elegirTema" id="elegirTema">Elegir Tema</button>
+                        <button class="botonA flechaDropdown" id="flechaDropdown">
+                            <img src="./images/dropdown.svg" alt="flecha para desplegar tipos de tema">
+                        </button>
+                    </div>
+                    <div class="desplegable">
+                        <button class="botonC" id="light">Sailor Daily</button>
+                        <button class="botonC" id="dark">Sailor Night</button>
+                    </div>
+                </div>
+    <!-- Boton MIS GUIFOS -->
+                <button class="botonB misGuifos paginaMisGuifos">Mis Guifos</button>
+            </nav> 
+        </div>
+    </header>
+    <div class="contenedorMisGuifos">
+        <div class="h3">
+            <h3>Mis Guifos</h3>
+        </div>
+        <div class="centrar">
+            <div class="recuadrosMisGuifos">
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="./js/header.js"></script>
+    <script src="./js/misguifos.js"></script>
+</body>
+</html>

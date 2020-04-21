@@ -1,0 +1,51 @@
+header {
+    .subHeader.paginaMisGuifos {
+        margin-bottom: 25px;
+        .botonera {
+            button.botonB.misGuifos.paginaMisGuifos {
+                color: $background-color-gris-dark;
+            }
+        }
+    }
+}
+
+.contenedorMisGuifos {
+    max-width: $max-width;
+    margin-left: $sides;
+    margin-right: $sides;
+    .recuadrosMisGuifos {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -8px;
+        justify-content: center;
+        .recuadroGifC {
+            overflow: hidden;
+            margin: 8px;
+            img {
+                object-fit: cover;
+                width: 288px;
+                height: 298px;
+            }
+        }
+    }
+}
+
+@media (min-width: $phone-landscape-min) {
+    .contenedorMisGuifos {
+        .recuadrosMisGuifos {
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media (min-width: $max-width) {
+    .contenedorMisGuifos {
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+
+
+
+    

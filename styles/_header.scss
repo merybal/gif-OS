@@ -1,0 +1,223 @@
+header {
+    .barraAzul {
+        @include barraAzulMobile;
+        h1 {
+            font-size: 12px;
+            padding-left: 10px;
+        }
+    }
+    
+    .subHeader {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+        box-sizing: border-box;
+        margin-left: $sides;
+        margin-right: $sides;
+        .logo {
+            margin-right: 10px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .botonera {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            button {
+                margin-bottom: 6px;
+            }
+
+            .crearGuifos {
+                width: 170px;
+                &:hover {
+                    @include outlineHover;
+                    background-color: $background-color-botonA-hover-light;
+                }
+            }
+            .botonDesplegable {
+                display: flex;
+        
+                .elegirTema {
+                    width: 134px;
+                    #elegirTema {
+                        &:focus {
+                            @include outlineHover;
+                        }
+                    }
+                }
+                .flechaDropdown {
+                    width: 36px;
+                    display: flex;
+                    justify-content: center;
+                }
+        
+                &:hover {
+                    .elegirTema {
+                        @include outlineHover;
+                        background-color: $background-color-botonA-hover-light;
+                    }
+                    .flechaDropdown {
+                        @include outlineHover;
+                        background-color: $background-color-botonA-hover-light;
+                    }
+        
+                }
+                &:focus {
+                    outline: none;
+                    .elegirTema {
+                        @include outlineHover;
+                    }
+                    .flechaDropdown {
+                        @include outlineHover;
+                    }
+        
+                }
+                
+            }
+            .desplegable {
+                display: none;
+                position: absolute; 
+                flex-direction: column;
+                align-items: center;
+                background-color: $background-color-gris-light;
+                box-shadow: $box-shadow-recuadroGifs-light;
+                height: 102px;
+                width: 170px;
+                margin-bottom: -102px;
+                margin-top: -6px;
+                .botonC {
+                    width: 150px;
+                    margin: 0;
+                    margin-top: 10px;
+
+                    &:hover {
+                        @include outlineHover;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .subHeaderCrearGuifos {
+        display: flex;
+        max-width: $max-width;
+        margin-left: $sides;
+        margin-right: $sides;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        flex-direction: row;
+        align-content: center;
+       
+        .flecha {
+            display: flex;
+            align-self: center;
+            img {
+                width: 18px;
+                height: 18px;
+            }   
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .logo {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        @media (min-width: $phone-landscape-min) {
+            justify-content: flex-start;
+            margin-top: 35px;
+            margin-bottom: 78px;
+            flex-direction: column-reverse;
+            align-content: flex-start;
+            .flecha {
+                align-self: unset;
+                img {
+                    width: unset;
+                    height: unset;
+                }
+            }
+        }
+        @media (min-width: $max-width) {
+            margin-left: auto;
+            margin-right: auto;
+            flex-direction: row;
+            align-content: center;
+            .flecha {
+                align-content: center;
+                margin-left: -38px;
+                margin-right: 14px;
+            }
+
+        }
+    }
+}
+
+#dark {
+    background-color: $background-color-botonC-light;
+    box-shadow: $box-shadow-botonC-light;
+    border: $border-botonC-light;                    
+}
+
+#light {
+    background-color: $background-color-botonC-picked-light;
+    box-shadow: $box-shadow-botonC-picked-light;
+    border: $border-botonC-picked-light;
+}
+
+
+@media (min-width: $phone-landscape-min) {
+    header {
+
+        .barraAzul {
+            height: $height-ba;
+            h1 {
+                padding-left: 0;
+            }
+        }
+    
+        .superior {
+            box-shadow: 0 1px 00 #110038;
+            margin: 1px;
+            padding: 0 8px 0 8px;
+        }
+        
+        .subHeader {
+            padding-left: 10px;
+            padding-right: 10px;
+            max-width: $max-width;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+
+            .botonera {
+                margin-top: 10px;
+                width: 420px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .crearGuifos {
+                    width: 144px;
+                } 
+            }
+        }
+    }
+}
+
+@media (min-width: $max-width) {
+    header {
+        .subHeader {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+
+

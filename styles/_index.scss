@@ -1,0 +1,241 @@
+
+#historial {
+    height: 34px;
+    margin-bottom: 15px;
+    max-width: $max-width;
+    margin-left: $sides;
+    margin-right: $sides;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    white-space: nowrap;
+    .botonG {
+        margin-right: 10px;
+    }
+    
+    @media (min-width: $max-width) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.recuadroGifB {
+    background-color: $background-color-gris-light;
+    box-shadow: $box-shadow-recuadroGifs-light;
+}
+
+#contenedorResultadosDeBusqueda { 
+    display: none;
+    max-width: $max-width;
+    margin-left: $sides;
+    margin-right: $sides;
+    margin-bottom: 48px;
+
+    #resultados {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: -8px;
+        margin-right: -8px;
+        p {
+            color: $font-color-boton-light;
+        }
+        .recuadroGifB.recuadroBusqueda {
+            height: $height-recuadroGifB;
+            width: $width-recuadroGifB;
+            margin: 8px;
+            .gifs {
+                img {
+                    object-fit: cover;
+                    width: $width-recuadroGifB;
+                    height: $height-recuadroGifB;
+                }
+            }
+            .hashtags { //barra azul
+                display: none;
+                margin-bottom: 4px;
+                margin-left: 4px;
+                margin-right: 4px;
+                h2 {
+                    margin-left: 3px;
+                    font-size: $font-size-small;
+                }
+            }
+
+            &:hover {
+                @include outlineHover;
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                .gifs {
+                    margin-bottom: -4px;
+                    img {
+                        height: $height-recuadroGifB-hover;
+                        width: $width-recuadroGifB-hover;
+                        margin: 4px 4px 0 4px;
+                    }
+                }
+                .hashtags {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $max-width) {
+    #contenedorResultadosDeBusqueda {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#hoyTeSugerimos {
+    margin-left: $sides;
+    margin-right: $sides;
+    max-width: $max-width;
+    @media (min-width: $max-width) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contenedorHoyTeSugerimos {
+        display: flex;
+        margin-left: -8px;
+        margin-right: -8px;
+        margin-bottom: 46px;
+        justify-content: center;
+        flex-wrap: wrap;
+        .recuadroGifA {
+            background-color: $background-color-gris-light;
+            height: $height-recuadroGifs;
+            box-shadow: $box-shadow-recuadroGifs-light;
+            width: 288px;
+            margin: 8px;
+        
+            .gifs {
+                margin: 2px 4px 4px 4px;
+                height: $height-gifs;
+                img {
+                    object-fit: cover;
+                    width: $width-recuadroGifB-hover;
+                    height: $height-gifs;
+                }
+                .botonE {
+                    margin-top: 234px;
+                    margin-left: 14px;
+                }
+            }
+    
+            &:hover {
+                cursor: pointer;
+                .gifs {
+                    outline: $outline-hover-light;
+                    outline-offset: -2px;
+                }
+                .botonE {
+                    outline: $outline-hover-light;
+                    outline-offset: -3px;
+                    
+                }
+            }
+        }
+    
+        .recuadro { //barra azul
+            margin: 3px;
+            display: flex;
+            align-content: center;
+            justify-content: space-between;
+            h2 {
+                margin-left: 3px;
+                font-size: $font-size-small;
+            }
+            img {
+                margin-right: 4px;
+            }
+        }
+    }
+}
+
+#tendencias {
+    max-width: $max-width;
+    margin-left: $sides;
+    margin-right: $sides;
+    @media (min-width: $max-width) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contenedorTendencias {
+        display: flex;
+        margin-left: -8px;
+        margin-right: -8px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+        justify-content: center;
+    
+    
+        .hashtags { //barra azul
+            display: none;
+            h2 {
+                margin-left: 3px;
+                font-size: $font-size-small;
+            }
+        }
+    
+        .recuadroGifB {
+            width: $width-recuadro-gifs;
+            margin: 8px;
+    
+            .gifs {
+                height: $height-recuadroGifB;
+                img {
+                    object-fit: cover;
+                    width: $width-recuadro-gifs;
+                    height: $height-recuadroGifB;
+                }
+            }
+    
+            &:hover {
+                cursor: pointer;
+                @include outlineHover;
+                .gifs {
+                    height: 266px;
+                    margin: 4px 4px 0 4px;
+                    img {
+                        height: $height-recuadroGifB-hover;
+                        width: $width-recuadroGifB-hover;
+                    }
+                }
+                
+                .hashtags {
+                    display: flex;
+                    margin-bottom: 4px;
+                    margin-left: 4px;
+                    margin-right: 4px;
+                }
+            }
+        }
+        .ancho {
+            width: $width-recuadroGifB;
+        }
+    
+        @media (min-width: 600px) {
+            .ancho {
+                width: 592px;
+                .gifs {
+                    img {
+                        width: $width-rececuadroGifB-ancho;
+                    }
+                }
+                &:hover {
+                    .gifs {
+                        img {
+                            width: $width-recuadroGifB-ancho-hover; 
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

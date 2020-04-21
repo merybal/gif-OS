@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: $font;
+    font-size: $font-size-big;
+}
+
+
+body {
+    background-color: $background-color-light;
+    font-weight: normal;
+    margin-left: auto;
+    margin-right: auto;
+    h1, h1, h3, h4, h5, h6 {
+        font-weight: normal;
+    }
+
+}
+
+
+button {
+    height: $height-botones;
+    color: $font-color-boton-light;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.botonA { //rosa (crear guifos, elegir tema)
+    background-color: $background-color-botonA-light;
+    border: $border-botonA-light;
+    box-shadow: $box-shadow-botonA-light;
+    &:focus {
+        outline: none;
+    }
+}
+
+.botonB { //sin fondo (mis guifos)
+    background-color: $background-color-botonB;
+    width: $width-botonB;
+    display: flex;
+    align-items: center;
+    &::first-letter {
+        text-decoration: underline;
+        text-underline-position: under;
+    }
+    &:hover {
+        outline: $outline-hover-light;
+    }
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        color: $font-color-boton-light;
+    }
+}
+
+.botonE { //ver mas
+    position: absolute;
+    height: $height-botonE;
+    width: $width-botonE;
+    background-color: $background-color-botonE-light;
+    color: $color-botonE;
+    font-size: $font-size-small;
+    border: $border-botonE-light;
+    box-shadow: $box-shadow-botonE-light;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        background-color: $background-color-botonE-hover-light;
+    }
+}
+
+.botonF { //desplegable busqueda
+    height: $height-botonF;
+    max-width: $max-width-botonF;
+    width: 100%;
+    background-color: $background-color-botonC-light;
+    box-shadow: $box-shadow-botonD-light;
+    border: $border-botonD-light;
+    text-align: left;
+    padding-left: 16px;
+    
+    &:hover {
+        @include outlineHover;
+        background-color: #DBDBDB;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+.botonG { //historial
+    height: $height-botonE;
+    width: unset;
+    background-color: $background-color-botonE-light;
+    color: $color-botonE;
+    font-size: $font-size-small;
+    border: $border-botonE-light;
+    box-shadow: $box-shadow-botonE-light;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        @include outlineHover;
+        background-color: $background-color-botonE-hover-light;
+    }
+}
+
+.botonH { //botones comenzar y cancelar
+    width: 144px;
+    color: $font-color-boton-light;
+    border: $border-botonA-light;
+    box-shadow: $box-shadow-botonA-light;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        @include outlineHover;
+    }
+}
+
+.barraAzul {
+    color: $font-color-ba;
+    height: $height-ba;
+    background-image: $background-image-ba-light;
+    display: flex;
+    align-items: center;
+    font-size: $font-size-small;
+}
+
+.h3 {
+    height: $height-h3;
+    background-color: $background-color-h3-light;
+    border: $border-h3-light;
+    box-shadow: $box-shadow-h3-light;
+    margin-bottom: 16px;
+    h3 {
+        font-size: $font-size-small;
+        height: 14px;
+        margin: 7px;
+    }
+}
+
+p {
+    color: $font-color-boton-light;
+    font-size: $font-size-small;
+}
+
+
+
+

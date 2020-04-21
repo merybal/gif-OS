@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Maria Baltar">
+    <meta name="description" content="Trabajo Práctico N° 2 gifOS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>gifOS / Maria Baltar</title>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="barraAzul superior">
+            <h1>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Numero de visitas 2.348.123</h1>
+        </div>
+        <div class="subHeader">
+            <div class="logo">
+                <img src="./images/gifOF_logo.png" alt="Logo" id="logo">
+            </div>
+            <nav class="botonera">
+    <!-- Boton CREAR GUIOFOS -->
+                <button class="botonA crearGuifos">Crear Guifos</button>
+    <!-- Boton ELEGIR TEMA -->
+                <div>
+                    <div class="botonDesplegable" id="botonDesplegable">
+                        <button class="botonA elegirTema" id="elegirTema">Elegir Tema</button>
+                        <button class="botonA flechaDropdown" id="flechaDropdown">
+                            <img src="./images/dropdown.svg" alt="flecha para desplegar tipos de tema">
+                        </button>
+                    </div>
+                    <div class="desplegable">
+                        <button class="botonC" id="light">Sailor Daily</button>
+                        <button class="botonC" id="dark">Sailor Night</button>
+                    </div>
+                </div>
+    <!-- Boton MIS GUIFOS -->
+                <button class="botonB misGuifos">Mis Guifos</button>
+            </nav> 
+        </div>
+    </header>
+
+    <!-- Barra de busqueda -->
+    <div class="contenedorBusqueda">
+        
+        <div class="barraAzul busqueda">
+            <h2>Buscar</h2>
+        </div>
+        <form class="buscador" id="buscador">
+            <input type="text" name="barraBusqueda" id="barraBusqueda" placeholder="Buscar gifs, hashtags, temas, busca lo que quieras..." autocomplete="off">
+            <label for="barraBusqueda"></label>
+            <button class="botonD" id="botonBusqueda" disabled>
+                <img src="./images/lupa_inactive.svg" alt="Lupa de busqueda" id="lupa">
+                Buscar
+            </button>
+        </form>
+        <div class="desplegableBusqueda" id="desplegableBusqueda">
+            <button class="botonF"></button>
+            <button class="botonF"></button>
+            <button class="botonF"></button>
+        </div>
+    </div>
+    <!-- HISTORIAL DE BUSQUEDA -->
+    <div id="historial">
+    </div>
+
+    <!-- SECCION RESULTADOS DE BUSQUEDA -->
+    <div id="contenedorResultadosDeBusqueda"></div>
+
+    <!-- SECCION HOY TE SUGERIMOS -->
+    <div id="hoyTeSugerimos">
+        
+        <div class="h3">
+            <h3>Hoy te sugerimos:</h3>
+        </div>
+        
+        <div class="contenedorHoyTeSugerimos">
+            <div class="recuadroGifA">
+                <div class="barraAzul recuadro">
+                    <h2></h2>
+                    <img class="cruz" src="./images/button_close.svg" alt="Boton de cierre">
+                </div>
+                <div class="gifs sugeridos">
+                    <button class="botonE">Ver más...</button>
+                </div>
+            </div>
+            <div class="recuadroGifA">
+                <div class="barraAzul recuadro">
+                    <h2></h2>
+                    <img class="cruz" src="./images/button_close.svg" alt="Boton de cierre">
+                </div>
+                <div class="gifs sugeridos">
+                    <button class="botonE">Ver más...</button>
+                </div>
+            </div>
+            <div class="recuadroGifA">
+                <div class="barraAzul recuadro">
+                    <h2></h2>
+                    <img class="cruz" src="./images/button_close.svg" alt="Boton de cierre">
+                </div>
+                <div class="gifs sugeridos">
+                    <button class="botonE">Ver más...</button>
+                </div>
+            </div>
+            <div class="recuadroGifA">
+                <div class="barraAzul recuadro">
+                    <h2></h2>
+                    <img class="cruz" src="./images/button_close.svg" alt="Boton de cierre">
+                </div>
+                <div class="gifs sugeridos">
+                    <button class="botonE">Ver más...</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Seccion Tenndencias -->
+    <div id="tendencias">
+        <div class="h3">
+            <h3>Tendencias:</h3>
+        </div>
+        <div class="contenedorTendencias">
+            <div class="recuadroGifB">
+                <div class="gifs tendencias">
+                </div>
+                <div class="barraAzul hashtags">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="recuadroGifB">
+                <div class="gifs tendencias">
+                </div>
+                <div class="barraAzul hashtags">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="recuadroGifB">
+                <div class="gifs tendencias">
+                </div>
+                <div class="barraAzul hashtags">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="recuadroGifB">
+                <div class="gifs tendencias">
+                </div>
+                <div class="barraAzul hashtags">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="recuadroGifB ancho">
+                <div class="gifs tendencias">
+                </div>
+                <div class="barraAzul hashtags">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="recuadroGifB">
+                <div class="gifs tendencias">
+                </div>
+                <div class="barraAzul hashtags">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="recuadroGifB">
+                <div class="gifs tendencias">
+                </div>
+                <div class="barraAzul hashtags">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="recuadroGifB">
+                <div class="gifs tendencias">
+                </div>
+                <div class="barraAzul hashtags">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="recuadroGifB">
+                <div class="gifs tendencias">
+                </div>
+                <div class="barraAzul hashtags">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="recuadroGifB ancho">
+                <div class="gifs tendencias">
+                </div>
+                <div class="barraAzul hashtags">
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="./js/header.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

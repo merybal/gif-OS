@@ -1,0 +1,18 @@
+@mixin barraAzulMobile {
+    color: $font-color-ba;
+    height: $height-ba-mobile;
+    background-image: $background-image-ba-light;
+    display: flex;
+    align-items: center;
+}
+
+@mixin outlineHover {
+    outline: $outline-hover-light;
+    outline-offset: $outline-offset-light;
+}
+
+
+
+
+
+

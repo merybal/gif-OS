@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Guifos</title>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="barraAzul superior">
+            <h1>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Numero de visitas </h1>
+        </div>
+        <div class="subHeaderCrearGuifos">
+            <div class="flecha">
+                <img src="./images/arrow.svg" alt="Flecha para volver">
+            </div>
+            <div class="logo">
+                <img src="./images/gifOF_logo.png" alt="Logo" id="logo">
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENEDOR CREAR GUIFOS -->
+    <div class="contenedorCrearGuifos">
+        <div class="barraAzul">
+            <h2>Crear Guifos</h2>
+        </div>
+            <div class="contenedorInstrucciones">
+                <div class="ventana">
+                    <img src="./images/window_img.png" alt="ventana">
+                </div>
+                <div class="instrucciones">
+                    <h4>Aquí podrás crear tus propios guifos</h4>
+                    <p>Crear tu <b><i>guifo</i></b> es muy fácil, graba cualquier 
+                        imagen con tu cámara y obtén guifos personalizados. Los 
+                        pasos para crear tu guifo son:</p>
+                    <p><b>1)</b> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</p>
+                    <p><b>2)</b> Capturar tu momento guifo</p>
+                    <p><b>3)</b> Revisar el momento</p>
+                    <p><b>4)</b> Listo para subir y compartir!</p>
+                    <p>¿Quieres comenzar a crear tu <b><i>guifo</i></b> ahora?</p>
+                </div>
+            </div>
+            <div class="botones">
+                <button class="botonH" id="cancelar">Cancelar</button>
+                <button class="botonH" id="comenzar">Comenzar</button>
+            </div>
+    </div>
+
+    <!-- VENTANA GRABAR VIDEO -->
+    <div class="ventanaDeCaptura">
+        <div class="barraAzul">
+            <h2 id="textoBarraVDC">Un Chequeo Antes de Empezar</h2>
+            <img src="./images/button_close.svg" alt="cruz" class="cruz" id="cruz">
+        </div>
+
+        <div class="visor">
+            <video id="video" autoplay muted></video>
+        </div>
+
+        <div class="contenedorVistaPrevia">
+            <img class="vistaPrevia" src="./images/window_img.png" alt="preview">
+        </div>
+        <div class="botonCapturar">
+            <button class="botonA camara">
+                <img src="./images/camera.svg" id="camara" alt="camara">
+            </button>
+            <button class="botonA capturar" id="capturar">Capturar</button>
+        </div>
+
+        <div class="grabando">
+            <div class="h3">00:00:00:00</div>
+            <div class="botonListo">
+                <button class="botonI listo" id="recording">
+                    <img src="./images/recording.svg" alt="grabando">
+                </button>
+                <button class="botonI listo" id="listo">Listo</button>
+            </div>
+
+            <div class="contenedorSubirGuifo">
+                <div class="barraDeCarga">
+                    <button class="botonA" id="flechaLateral">
+                        <img src="./images/forward.svg" alt="forward">
+                    </button>
+                    <div class="barra">
+                        <div class="rectangulo primero"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo"></div>
+                        <div class="rectangulo ultimo"></div>
+                    </div>
+                </div>
+                <div class="botonesSubirGuifo">
+                    <button class="botonH" id="repetirCaptura">Repetir Captura</button>
+                    <button class="botonH" id="subirGuifo">Subir Guifo</button>
+                </div>
+            </div>
+        </div>
+        <div class="contenedorSubiendoGuifo">
+            <div class="recuadroBlanco">
+                <div>
+                    <div class="globo">
+                        <img src="./images/globe_img.png" alt="Globe">
+                    </div>
+                    <h4>Estamos subiendo tu Guifo...</h4>
+                </div>
+                <div class="barra">
+                    <div class="rectangulo primero"></div>
+                    <div class="rectangulo"></div>
+                    <div class="rectangulo"></div>
+                    <div class="rectangulo"></div>
+                    <div class="rectangulo"></div>
+                    <div class="rectangulo"></div>
+                    <div class="rectangulo"></div>
+                    <div class="rectangulo"></div>
+                    <div class="rectangulo"></div>
+                    <div class="rectangulo"></div>
+                    <div class="rectangulo"></div>
+                    <div class="rectangulo"></div>
+                    <div class="rectangulo"></div>
+                    <div class="rectangulo"></div>
+                    <div class="rectangulo"></div>
+                    <div class="rectangulo"></div>
+                    <div class="rectangulo"></div>
+                    <div class="rectangulo"></div>
+                    <div class="rectangulo"></div>
+                    <div class="rectangulo"></div>
+                    <div class="rectangulo"></div>
+                    <div class="rectangulo"></div>
+                    <div class="rectangulo ultimo"></div>
+                </div>
+                <p>Tiempo restante: <s>30 años</s> algunos minutos</p>
+            </div>
+            <button class="botonH" id="cancelarSubida">Cancelar</button>
+        </div>
+    </div>
+
+    <!-- VENTANA SUBIDO CON EXITO -->
+    <div class="contenedorSubidoExitosamente">
+        <div class="barraAzul">
+            <h2>Guifo Subido Con Éxito</h2>
+            <img src="./images/button_close.svg" alt="cruz" class="cruzExito">
+        </div>
+        <div class="subContenedor">
+            <div class="gifSubido">
+                <img src="./images/gifOF_logo.png" alt="Gif subido" id="vistaPreviaGifSubido">
+            </div>
+            <div class="opciones">
+                <h4>Guifo creado con éxito</h4>
+                <button class="botonJ" id="copiarEnlace">Copiar Enlace Guifo</button>
+                <button class="botonJ" id="descargarGuifo">Descargar Guifo</button>
+            </div>
+        </div>
+        <div class="contenedorBotonListo">
+            <button class="botonA" id="botonListoSubido">Listo</button>
+        </div>
+    </div>
+
+    <!-- MIS GUIFOS -->
+    <div class="contenedorMisGuifos">
+        <div class="h3">
+            <h3>Mis Guifos</h3>
+        </div>
+        <div class="recuadrosMisGuifos">
+        </div>
+    </div>
+
+
+
+
+
+    <!-- JAVASCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js"></script>
+    <script src="./js/crearguifos.js"></script>
+    <script src="./js/misguifos.js"></script>
+</body>
+</html>

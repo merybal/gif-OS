@@ -1,0 +1,101 @@
+.contenedorBusqueda {
+    max-width: $max-width;
+    height: 99px;
+    margin-left: $sides;
+    margin-right: $sides;
+    margin-bottom: 15px;
+    background-color: $background-color-gris-light;
+    box-shadow: $box-shadow-contenedorBusqueda-light;
+    box-sizing: border-box;
+    padding: 3px;
+
+    @media (min-width: $max-width) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .busqueda { //barra azul
+        padding-left: 3px;
+        height: $height-ba;
+        h2 {
+            font-size: $font-size-small;
+            font-weight: $font-weight-ba-busqueda;
+        }
+
+    }
+    
+    .buscador {
+        height: 72px;
+        display: flex;
+        padding-left: 12px;
+        padding-right: 15px;
+        justify-content: space-between;
+        align-content: center;
+        #barraBusqueda {
+            box-sizing: border-box;
+            max-width: 1057px;
+            width: 100%;
+            height: 46px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            border: 1px solid #979797;
+            box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+            padding-left: 16px;
+            
+            &:focus {
+                outline: none;
+            }
+        }
+        .botonD {
+            display: flex;
+            padding-left: 8px;
+            padding-right: 12px;
+            width: 102px;
+            justify-content: space-around;
+            align-items: center;
+            background-color: $background-color-gris-light;
+            border: $border-botonD-light;
+            box-shadow: $box-shadow-botonD-light;
+            margin-top: 18px;
+            margin-left: 8px;
+            color: #B4B4B4;
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                cursor: unset;
+            }
+            &:hover:enabled {
+                cursor: pointer;
+                outline: 1px dotted #110038;
+                outline-offset: -4px;
+            }
+        }
+        .habilitado {
+            color: $font-color-boton-light;
+            background-color: $background-color-botonA-light;
+            box-shadow: $box-shadow-botonA-light;
+            border: $border-botonA-light;
+            &:hover {
+                background-color: $background-color-botonA-hover-light;
+            }
+        }
+        
+    }
+    .desplegableBusqueda {
+        position: relative;
+        box-sizing: border-box;
+        margin-left: -3px;
+        padding: 16px;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: $background-color-gris-light;
+        height: 160px;
+        width: $max-width;
+        width: calc(100% + 6px);
+        box-shadow: $box-shadow-contenedorBusqueda-light;        
+
+    }
+}
+

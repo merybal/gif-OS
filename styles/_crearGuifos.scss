@@ -1,0 +1,437 @@
+.contenedorCrearGuifos {
+    max-width: 684px;
+    min-height: 386px;
+    height: 100%;
+    background-color: $background-color-gris-light;
+    box-shadow: $box-shadow-contenedorBusqueda-light;
+    box-sizing: border-box;
+    padding: 3px;
+    margin-left: $sides;
+    margin-right: $sides;
+    margin-bottom: 40px;
+    @media (min-width: $phone-landscape-min) {
+        margin-bottom: 153px;
+    }
+
+    .barraAzul {
+        h2 {
+            font-size: $font-size-small;
+            padding-left: 3px;
+        }
+    }
+    .contenedorInstrucciones {
+        display: flex;
+        margin: 20px 20px 20px 20px;
+        .ventana {
+            margin-right: 16px;
+        }
+        .instrucciones {
+            line-height: 20px;
+            h4 {
+                color: $font-color-boton-light;
+                font-size: $font-size-big;
+                font-weight: 700;
+                margin-bottom: 17px;
+            }
+            p {
+                color: $font-color-boton-light;
+                b i {
+                    font-size: $font-size-small;
+                }
+                margin-bottom: 11px;
+            }
+        }
+    }
+    .botones {
+        display: flex;
+        margin-bottom: 30px;
+        justify-content: center;
+        #cancelar {
+            background-color: $background-color-light;
+            &:hover {
+                background-color: $background-color-botonH-hover-light;
+            }
+        }
+        #comenzar {
+            background-color: $background-color-botonA-light;
+            &:hover {
+                background-color: $background-color-botonA-hover-light;
+            }
+        }
+    }
+
+    @media (min-width: $phone-landscape-min) {
+        .contenedorInstrucciones {
+            margin: 30px 90px 14px 25px;
+        }
+        .botones {
+            margin-bottom: 36px;
+            margin-right: 36px;
+            text-align: right;
+            justify-content: flex-end;
+            #cancelar {
+                margin-right: 16px;
+            }
+        }
+    }
+
+    @media (min-width: 705px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.ventanaDeCaptura {
+    display: none;
+    max-width: 800px;
+    background-color: $background-color-gris-light;
+    box-shadow: $box-shadow-contenedorBusqueda-light;
+    box-sizing: border-box;
+    padding: 3px;
+    margin-left: $sides;
+    margin-right: $sides;
+    .barraAzul {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 3px;
+        padding-right: 3px;
+        h2 {
+            font-size: $font-size-small;
+        }
+        margin-bottom: 8px;
+        .cruz {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .barra {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 24px;
+        width: 240px;
+        background-color: $background-color-gris-dark;
+        box-shadow:  inset 2px 2px 0 0 #000000, inset -2px -2px 0 0 #FFFCFC;
+        .rectangulo {
+            width: 12px;
+            height: 20px;
+            background-color: #999999;
+            border-right: 1px solid #B4B4B4;
+            border-left: 1px solid #B4B4B4;
+        }
+        .primero {
+            border-left: unset;
+        }
+        .ultimo {
+            border-right: unset;
+        }
+    }
+    .visor {
+        background-color: blue;
+        margin-left: 11px;
+        margin-right: 11px;
+        border: $border-visor-light;
+        box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+        margin-bottom: 24px;
+        video {
+            width: 100%;
+            border: $border-visor-light;
+            box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+            margin-bottom: -4px;
+        }
+    }
+    .contenedorVistaPrevia {
+        display: none;
+        justify-content: center;
+        margin-left: 11px;
+        margin-right: 11px;
+        margin-bottom: 24px;
+        img {
+            border: $border-visor-light;
+            box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+            width: 100%;
+        }
+    }
+
+    .botonCapturar {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 12px;
+        margin-bottom: 16px;
+        .camara {
+            width: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .capturar {
+            width: 144px;
+        }
+        &:hover {
+            .camara {
+                @include outlineHover;
+                background-color: $background-color-botonA-hover-light;
+            }
+            .capturar {
+                @include outlineHover;
+                background-color: $background-color-botonA-hover-light;
+            }
+        }
+    }
+    .grabando {
+        display: none; //cambia a flex
+        justify-content: space-between;
+        margin-left: 11px;
+        .h3 { //cronometro
+            width: 124px;
+            height: 36px;
+            margin: unset;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            border: $border-visor-light;
+            box-shadow: $box-shadow-visor-light;
+            @media (min-width: $phone-landscape-min) {
+                display: flex;
+            }
+        }
+        .botonListo {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 12px;
+            margin-bottom: 16px;
+            .botonI {
+                background-color: $background-color-botonI-light;
+                border: $border-botonA-light;
+                box-shadow: $box-shadow-botonI-light;
+            }
+            #recording {
+                width: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:focus {
+                    outline: none;
+                }
+            }
+            #listo {
+                width: 144px;
+                color: $font-color-boton-dark;
+                &:focus {
+                    outline: none;
+                }
+            }
+            &:hover {
+                #recording {
+                    @include outlineHover;
+                }
+                #listo {
+                    @include outlineHover;
+                }
+            }
+        }
+        .contenedorSubirGuifo {
+            display: none;
+            justify-content: space-between;
+            width: 676px;
+            @media (min-width: $phone-landscape-min) {
+                margin-left: 24px;
+                margin-right: 11px;
+            }
+            .barraDeCarga {
+                display: none; //cambia a flex
+                justify-content: space-between;
+                text-align: center;
+                width: 267px;
+                height: 24px;
+                margin-top: 7px;
+
+                #flechaLateral {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 24px;
+                    height: 24px;
+                }
+                @media (min-width: $phone-landscape-min) {
+                    display: flex;
+                }
+            }
+            .botonesSubirGuifo {
+                display: flex;
+                justify-content: center;
+                width: 302px;
+                margin-bottom: 16px;
+                #repetirCaptura {
+                    background-color: $background-color-light;
+                    &:hover {
+                        background-color: $background-color-botonH-hover-light;
+                    }
+                }
+                #subirGuifo {
+                    background-color: $background-color-botonA-light;
+                    &:hover {
+                        background-color: $background-color-botonA-hover-light;
+                    }
+                }
+                @media (min-width: $phone-landscape-min) {
+                    justify-content: space-between;
+                    width: 302px;
+                }
+            }
+        }
+    }
+    .contenedorSubiendoGuifo {
+        display: none;
+        flex-direction: column;
+        margin-left: 11px;
+        margin-right: 11px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        align-items: flex-end;
+        .recuadroBlanco {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            background-color: $font-color-boton-dark;
+            margin-bottom: 21px;
+            height: 440px;
+            border: $border-visor-light;
+            box-shadow: $box-shadow-visor-light;
+
+            .globo {
+                display: flex;
+                justify-content: center;
+                margin-top: 140px;
+                margin-bottom: 8px;
+            }
+            h4 {
+                color: $font-color-boton-light;
+                font-size: $font-size-big;
+                font-weight: 700;
+                margin-bottom: 40px;
+            }
+            .barra {
+                width: 200px;
+                margin-bottom: 10px;
+                @media (min-width: $phone-landscape-min) {
+                    width: 324px;
+                }
+                
+            }
+            p {
+                font-size: 12px;
+                color: rgba(17,0,56,0.64);
+                s {
+                    font-size: inherit;
+                }
+            }
+        }
+        #cancelarSubida {
+            background-color: $background-color-light;
+            &:hover {
+                background-color: $background-color-botonH-hover-light;
+            }
+        }
+    }
+    
+    @media (min-width: 880px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.contenedorSubidoExitosamente {
+    display: none;
+    max-width: 721px;
+    background-color: $background-color-gris-light;
+    box-shadow: $box-shadow-contenedorBusqueda-light;
+    box-sizing: border-box;
+    padding: 3px;
+    margin-left: $sides;
+    margin-right: $sides;
+    margin-bottom: 40px;
+    .barraAzul {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 3px;
+        padding-right: 3px;
+        h2 {
+            font-size: $font-size-small;
+        }
+        .cruzExito {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .subContenedor {
+        margin: 26px 24px 62px 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .gifSubido {
+            max-width: 371px;
+            width: 100%;
+            height: 196px;
+            background-color: blue;
+            img {
+                object-fit: cover;
+                height: 196px;
+                width: 100%;
+                border: $border-visor-light;
+                box-shadow: $box-shadow-visor-light;
+            }
+        }
+        .opciones {
+            margin-top: 22px;
+            width: 256px;
+            h4 {
+                color: $font-color-boton-light;
+                font-size: $font-size-big;
+                font-weight: 700;
+                margin-bottom: 16px;
+            }
+            .botonJ {
+                width: 256px;
+                margin-bottom: 14px;
+                background-color: $background-color-light;
+                border: $border-botonA-light;
+                box-shadow: $box-shadow-botonA-light;
+                &:hover {
+                    background-color: $background-color-botonH-hover-light;
+                    @include outlineHover;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        @media (min-width: $phone-landscape-min) {
+            flex-direction: row;
+        }
+    }
+    .contenedorBotonListo {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 26px;
+        margin-bottom: 44px;
+        .botonA {
+            width: 144px;
+            &:hover {
+                @include outlineHover;
+            }
+        }
+    }
+    @media (min-width: $phone-landscape-min) {
+        margin-bottom: 153px;
+    }
+
+    @media (min-width: 880px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

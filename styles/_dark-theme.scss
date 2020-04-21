@@ -1,0 +1,262 @@
+.dark-theme {
+    background-color: $background-color-dark;
+    #light {
+        background-color: $background-color-botonC-dark;
+        box-shadow: $box-shadow-botonC-light;
+        border: $border-botonC-light;
+        color: $font-color-boton-light;    
+    }
+    #dark {
+        background-color: $background-color-botonC-picked-dark;
+        border: $border-botonC-picked-dark;
+        box-shadow: $box-shadow-botonC-picked-dark;
+        color: $font-color-boton-dark;
+    }
+    
+    p {
+        color: $font-color-boton-dark;
+    }
+
+
+    .barraAzul {
+        background-image: $background-image-ba-dark;
+    }
+    .h3 {
+        border: $border-h3-dark;
+        box-shadow: $box-shadow-h3-dark;
+    }
+
+    button {
+        color: $font-color-boton-dark;
+    }
+    
+    .botonA {
+        background-color: $background-color-botonA-dark;
+        border: $border-botonA-dark;
+        box-shadow: $box-shadow-botonA-dark;
+    }
+
+    header {
+        .subHeader{
+            .botonera {
+                .crearGuifos {
+                    &:hover {
+                        background-color: $background-color-botonA-hover-dark;
+                    }
+                }
+                .botonDesplegable {
+                    &:hover {
+                        .elegirTema {
+                            background-color: $background-color-botonA-hover-dark;
+                        }
+                        .flechaDropdown {
+                            background-color: $background-color-botonA-hover-dark;
+                        }
+                    }
+                    .flechaDropdown {
+                        img {
+                            filter: invert(100);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    header .subHeader .botonera .desplegable {
+        background-color: $background-color-gris-dark;
+        box-shadow:  $box-shadow-contenedorBusqueda-dark;
+    }
+
+    .botonB {
+        &:hover {
+            outline: $outline-hover-dark;
+        }
+    }
+
+    .botonE {
+        background-color: $background-color-botonC-picked-dark;
+        box-shadow: $box-shadow-botonE-dark;
+        &:hover {
+            background-color: $background-color-botonE-hover-dark;
+        }
+    }
+
+    .botonG {
+        background-color: $background-color-botonC-picked-dark;
+        box-shadow: $box-shadow-botonE-dark;
+        &:hover {
+            background-color: $background-color-botonE-hover-dark;
+        }
+    }
+
+    .contenedorBusqueda {
+        background-color: $background-color-gris-dark;
+        box-shadow: $box-shadow-contenedorBusqueda-dark;
+        .buscador {
+            .botonD {
+                background-color: $background-color-gris-dark;
+                color: $font-color-botonD-dark;
+                img { 
+                    filter: invert(0.35);
+                }
+            }
+            .habilitado {
+                color: $font-color-boton-dark;
+                background-color: $background-color-botonA-dark;
+                box-shadow: $box-shadow-botonA-dark;
+                border: $border-botonA-dark;
+                img {
+                    filter: unset;
+                }
+                &:hover {
+                    background-color: $background-color-botonA-hover-dark;
+                }
+            }
+        }
+        .desplegableBusqueda {
+            background-color: $background-color-gris-dark;
+            box-shadow: $box-shadow-contenedorBusqueda-dark;
+            .botonF {
+                color: $font-color-boton-light;
+                background-color: $background-color-botonF-dark;
+                box-shadow: $box-shadow-botonF-dark;
+            }
+        }
+
+    }
+
+    #contenedorResultadosDeBusqueda {
+        #resultados {
+            .recuadroGifB.recuadroBusqueda {
+                background-color: $background-color-gris-dark;
+                box-shadow: $box-shadow-recuadroGifs-dark;
+            }
+        }
+    }
+
+    .recuadroGifB {
+        background-color: $background-color-gris-dark;
+        box-shadow: $box-shadow-recuadroGifs-dark;
+    }
+    
+    #hoyTeSugerimos {
+        .contenedorHoyTeSugerimos {
+            .recuadroGifA {
+                background-color: $background-color-gris-dark;
+                box-shadow: $box-shadow-recuadroGifs-dark;
+            }
+        }
+    }
+
+    header {
+        .subHeaderCrearGuifos {
+            .flecha {
+                img {
+                    filter: invert(100);
+                }
+            }
+        }
+    }
+
+    .contenedorCrearGuifos {
+        background-color: $background-color-gris-dark;
+        box-shadow: $box-shadow-contenedorBusqueda-dark;
+        .botones {
+            #cancelar {
+                background-color: $background-color-dark;
+                box-shadow: $box-shadow-boronH-dark;
+                &:hover {
+                    outline: $outline-hover-dark;
+                    background-color: $background-color-dark;
+                }
+            }
+            #comenzar {
+                background-color: $background-color-botonA-dark;
+                &:hover {
+                    background-color: $background-color-botonA-hover-dark;
+                }
+            }
+        }
+    }
+
+    .ventanaDeCaptura {
+        background-color: $background-color-gris-dark;
+        box-shadow: $box-shadow-contenedorBusqueda-dark;
+        .visor {
+            box-shadow: $box-shadow-visor-dark;
+            border: $border-visor-dark;
+        }
+        .botonCapturar {
+            .camara {
+                img {
+                    filter: invert(100);
+                }
+            }
+            &:hover {
+                .camara {
+                    background-color: #CE36DB;
+
+                }
+                .capturar {
+                    background-color: #CE36DB;
+                }
+            }
+        }
+        .grabando {
+            .contenedorSubirGuifo {
+                .barraDeCarga {
+                    #flechaLateral {
+                        img {
+                            filter: invert(100);
+                        }
+                    }
+                }
+                .botonesSubirGuifo {
+                    #repetirCaptura {
+                        background-color: $background-color-dark;
+                        box-shadow: $box-shadow-boronH-dark;
+                        &:hover {
+                            outline: $outline-hover-dark;
+                            background-color: $background-color-dark;
+                        }
+                    }
+                    #subirGuifo {
+                        background-color: $background-color-botonA-dark;
+                        &:hover {
+                            background-color: $background-color-botonA-hover-dark;
+                        }
+                    }
+                }
+            }
+        }
+        .contenedorSubiendoGuifo {
+            #cancelarSubida {
+                background-color: $background-color-dark;
+                box-shadow: $box-shadow-boronH-dark;
+                &:hover {
+                    outline: $outline-hover-dark;
+                    background-color: $background-color-dark;
+                }
+            }
+        }
+    }
+    
+    .contenedorSubidoExitosamente {
+        background-color: $background-color-gris-dark;
+        box-shadow: $box-shadow-contenedorBusqueda-dark;
+        .subContenedor {
+            .opciones {
+                .botonJ {
+                    background-color: $background-color-dark;
+                    box-shadow: $box-shadow-boronH-dark;
+                    &:hover {
+                        outline: $outline-hover-dark;
+                        background-color: $background-color-dark;
+                    }
+                }
+            }
+        }
+    }
+
+}
